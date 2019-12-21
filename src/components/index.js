@@ -1,13 +1,10 @@
-/* global module */
 import React from 'react';
 import { render } from 'react-dom';
 import App from './components/App';
-//import 'semantic-ui-css/semantic.css';
 
 const renderApp = () => {
-  render(<App />, document.getElementById('root'));
+  render(<App />, document.querySelector('#root'));
 };
-
 renderApp();
 
 if (module.hot) module.hot.accept(renderApp);
